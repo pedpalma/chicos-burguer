@@ -1,8 +1,8 @@
-import "../assets/css/css_pages/Index.css"
+import "../assets/css/css_pages/Index.css";
 import Header from "../components/Header";
-import banner from "../assets/img/bannerChicosAborgue.png"
-import sobre_nos from "..//assets/img/sobreNos.png"
-import logo from "../assets/img/logo.png"
+import banner from "../assets/img/bannerChicosAborgue.png";
+import sobre_nos from "..//assets/img/sobreNos.png";
+import logo from "../assets/img/logo.png";
 import Footer from "../components/Footer";
 
 
@@ -15,7 +15,7 @@ function Index(){
         {/* <!-- BOOSTSTRAP --> */}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></link>
         {/* <!-- Título da aba do navegador --> */}
-        <title>Chico's Burger</title>
+        <title>Home</title>
         {/* <!-- Ícone da aba do navegador --> */}
         <link rel="shortcut icon" src={logo} type="image/x-icon"></link>
     </head>

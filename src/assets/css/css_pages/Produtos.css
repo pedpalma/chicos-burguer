@@ -1,0 +1,221 @@
+/* ====================================
+   Fonte personalizada da Google Fonts
+==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* Centraliza conteúdo com flexbox */
+.centralizar {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+
+
+/* Remove sublinhado dos links e define cor preta */
+a {
+  text-decoration: none;
+
+  color: #000000;
+
+}
+
+
+/* ====================================
+                BODY
+==================================== */
+body {
+  /* Evita rolagem horizontal */
+  overflow-x: hidden;
+
+  /* Remove margens padrão */
+  margin: 0;
+
+  /* Define fonte */
+  font-family: 'Poppins', sans-serif;
+
+  /* Define cor de fundo translúcida */
+  background: #a19286bb !important;
+
+  /* Suaviza o deslizamento */
+  scroll-behavior: smooth;
+
+}
+
+/* ====================================
+                Produtos
+==================================== */
+
+.secao-produtos{
+    text-align: center;
+    margin: 10px ;
+}
+.produtos-titulo {
+
+    font-size: 2em;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.info-produtos{
+    max-width: 800px;
+    margin: 20px auto;
+    font-weight: 600;
+}
+
+/* ====================================
+              CONTAINER
+==================================== */
+.container {
+
+  /* Layout em linha */
+  display: flex;
+
+  /* Centraliza os cards */
+  justify-content: center;
+
+  /* Quebra de linha automática */
+  flex-wrap: wrap;
+
+  /* Espaço entre os cards */
+  gap: 20px;
+
+  /* Espaço inferior */
+  padding-bottom: 40px;
+
+}
+
+/* ====================================
+                CARDs
+==================================== */
+.card {
+
+  /* Cor de fundo translúcida */
+  background: #ac927dbb;
+
+  /* Largura fixa */
+  width: 360px;
+
+  /* Cantos arredondados */
+  border-radius: 10px;
+
+  /* Sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  padding: 20px;
+
+  text-align: center;
+
+  /* Animação ao passar o mouse */
+  transition: transform 0.3s ease-in-out;
+
+}
+
+
+/* Efeito ao passar o mouse no card */
+.card:hover {
+
+  /* Aumenta o tamanho */
+  transform: scale(1.05);
+
+}
+
+
+/* Imagem dentro do card */
+.img-card {
+
+  width: 90%;
+
+  border-radius: 10px;
+
+}
+
+
+/* Título do card */
+.card h2 {
+
+  margin: 10px 0;
+
+}
+
+
+/* ====================================
+                PREÇO
+==================================== */
+.preco {
+
+  font-size: 15px;
+
+  font-weight: bold;
+
+  color: black;
+
+  margin: 10px 0;
+}
+
+
+/* ====================================
+                ICONES
+==================================== */
+/* Ícones de redes sociais */
+i {
+  color: white;
+}
+
+footer a {
+  font-style: none;
+  color: white;
+}
+
+/* ====================================
+   Scrollbar personalizada (WebKit)
+==================================== */
+
+/* Largura e altura da barra */
+::-webkit-scrollbar {
+
+  width: 12px;
+
+  height: 12px;
+
+}
+
+
+/* Trilha (fundo da barra) */
+::-webkit-scrollbar-track {
+
+  background: transparent;
+
+}
+
+
+/* Polegar (a parte que se move) */
+::-webkit-scrollbar-thumb {
+
+  background-color: #9a5833;
+
+  border-radius: 100px;
+
+  height: 20px;
+
+  width: 20px;
+
+  transition: all 0.3s ease;
+
+}
+
+/* Efeito hover na barra */
+::-webkit-scrollbar-thumb:hover {
+
+  background-color: #b76a3c;
+
+  transform: scale(1.4);
+
+}
