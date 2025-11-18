@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* Centraliza conteúdo usando Flexbox */
+.centralizar {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* ====================================
+     Reset e estilos base para links
+==================================== */
+a {
+    text-decoration: none;
+
+    color: #000000;
+}
+
+
+/* Estilo geral do body */
+body {
+    /* Remove rolagem horizontal */
+    overflow-x: hidden;
+
+    /* Remove margem padrão */
+    margin: 0;
+
+    /* Aplica a fonte Poppins */
+    font-family: 'Poppins', sans-serif;
+
+    /* Cor de fundo */
+    background: #a19286bb;
+
+    /* Suaviza o deslizamento */
+    scroll-behavior: smooth;
+
+}
+
+.about-section {
+    position: relative;
+    padding: 270px 40px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* overlay com opacidade */
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* controle da opacidade */
+    z-index: 1;
+}
+
+/* Texto acima do overlay */
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+
+/* ====================================
+        Mapa do Estabelecimento
+==================================== */
+/* Container geral da seção */
+.mapaGeral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centraliza horizontal */
+    justify-content: center;  /* centraliza vertical se necessário */
+    text-align: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+/* Título */
+.titulo_sobrenos {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Centraliza o iframe dentro da div */
+.centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+/* Ajuste do iframe para não estourar no mobile */
+.centralizar iframe {
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+/* ====================================
+                Produtos
+==================================== */
+.nossosprodutos {
+    text-align: center;
+}
+
+
+/* Container dos produtos e imagem */
+.div_nossosprodutos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+
+/* Imagem dos produtos */
+.img_nossosprodutos {
+    width: 16%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* Efeito de opacidade ao passar o mouse */
+.img_nossosprodutos:hover {
+    opacity: 0.5;
+}
+
+
+/* Lista de produtos com ícones */
+.lista_nossosprodutos {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+
+/* Ajusta a linha de produtos */
+.lista_nossosprodutos li {
+    line-height: 2;
+}
+
+.div_video {
+    display: block;                  /* torna o iframe um bloco */
+    margin: 80px auto 0 auto;   
+    margin-bottom: 80px;     /* 40px de espaço acima, centralizado */
+    border-radius: 25px;             /* bordas arredondadas */
+    max-width: 80%;                  /* aumenta largura máxima */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* sombra opcional */
+}
+
+/* ====================================
+   Scrollbar personalizada (WebKit)
+==================================== */
+
+/* Largura e altura da barra */
+::-webkit-scrollbar {
+    width: 12px;
+
+    height: 12px;
+}
+
+
+/* Trilha (fundo da barra) */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Polegar (a parte que se move) */
+::-webkit-scrollbar-thumb {
+    background-color: #9a5833;
+
+    border-radius: 100px;
+
+    height: 20px;
+
+    width: 20px;
+
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover na barra */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b76a3c;
+
+    transform: scale(1.4);
+}
+  

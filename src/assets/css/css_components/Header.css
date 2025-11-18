@@ -1,0 +1,83 @@
+/* ====================================
+     Header (topo do site)
+==================================== */
+.divHeader {
+ display: flex;
+
+ /* Espaço entre logo e menu */
+ justify-content: space-between;
+
+ /* Alinha os itens */
+ align-items: center;
+
+ padding: 1rem 2rem;
+
+ background-color: #9a5833;
+
+ position: relative;
+}
+
+
+/* Logo no topo */
+.logo {
+ width: 11%;
+}
+
+
+/* ====================================
+         Navegação (menu)
+==================================== */
+.nav-box {
+ background: rgba(255, 255, 255, 0.08);
+
+ /* Efeito de vidro fosco */
+ backdrop-filter: blur(10px);
+
+ /* Arredonda as bordas */
+ border-radius: 16px;
+
+ padding: 0.6rem 1.2rem;
+
+ /* Aplica sombra a div */
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Lista de navegação em linha */
+.nav-list {
+ list-style: none;
+
+ display: flex;
+
+ gap: 1.5rem;
+
+ margin: 0;
+
+ padding: 0;
+}
+
+
+/* Estilo dos links do menu */
+.nav-item {
+ color: #000000;
+
+ text-decoration: none;
+
+ font-size: 1.6rem;
+
+ font-weight: 600;
+
+ padding: 0.4rem 0.8rem;
+
+ border-radius: 8px;
+
+ transition: all 0.3s ease;
+}
+
+
+/* Estilo hover dos links do menu */
+.nav-item:hover {
+ background: rgba(255, 255, 255, 0.15);
+
+ color: #000000;
+}
