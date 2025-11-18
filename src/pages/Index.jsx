@@ -24,9 +24,22 @@ function Index(){
         {/* SOBRE NOS/IMG BACKGROUND */}
         <div className="about-section" style={{backgroundImage: `url(${banner})`}}>
             <div className="about-content">
-                <h2>Sobre nós</h2>
-                <p>
-                A Chico's Burguer nasceu de um sonho simples, mas saboroso: deixar o estômago e o bolso dos nossos clientes felizes. Tudo começou com Chico e seus amigos, que sempre compartilharam a paixão por boa comida e pela ideia de empreender com propósito. Juntos, decidiram criar um lugar onde o sabor gourmet encontrasse preços acessíveis, sem abrir mão da qualidade.<br></br><br></br>Cada hambúrguer que sai da nossa chapa carrega dedicação, criatividade e aquele toque caseiro que faz toda a diferença. Na Chico's Burguer, acreditamos que comer bem não precisa custar caro — e é isso que entregamos todos os dias: delícias que cabem no seu gosto e no seu bolso. 
+                <h2 class="about-title">Sobre nós</h2> 
+                <p class="about-text">
+                A <span class="highlight accent">Chico's Burguer</span> nasceu de um sonho simples, mas saboroso:
+                deixar o <span class="highlight">estômago e o bolso</span> dos nossos clientes felizes.
+                Tudo começou com <span class="highlight">Chico e seus amigos</span>, que sempre compartilharam a
+                <span class="highlight glow">paixão por boa comida</span> e pela ideia de empreender com propósito.
+                Juntos, decidiram criar um lugar onde o <span class="highlight underline">sabor gourmet</span>
+                encontrasse <span class="highlight accent">preços acessíveis</span>, sem abrir mão da <span class="highlight">qualidade</span>.
+                </p>
+
+                <p class="about-text">
+                Cada hambúrguer que sai da nossa chapa carrega <span class="highlight">dedicação, criatividade</span>
+                e aquele <span class="highlight glow">toque caseiro</span> que faz toda a diferença.
+                Na <span class="highlight accent">Chico's Burguer</span>, acreditamos que
+                <span class="highlight strong">comer bem não precisa custar caro</span> — e é isso que entregamos todos os dias:
+                delícias que cabem no seu gosto e no seu bolso.
                 </p>
             </div>
         </div>
