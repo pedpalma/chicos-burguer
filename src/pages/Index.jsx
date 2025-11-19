@@ -30,7 +30,7 @@ function Index(){
                 deixar o <span class="highlight">estômago e o bolso</span> dos nossos clientes felizes.
                 Tudo começou com <span class="highlight">Chico e seus amigos</span>, que sempre compartilharam a
                 <span class="highlight glow">paixão por boa comida</span> e pela ideia de empreender com propósito.
-                Juntos, decidiram criar um lugar onde o <span class="highlight underline">sabor gourmet</span>
+                Juntos, decidiram criar um lugar onde o <span class="highlight underline">sabor gourmet </span>
                 encontrasse <span class="highlight accent">preços acessíveis</span>, sem abrir mão da <span class="highlight">qualidade</span>.
                 </p>
 

@@ -163,7 +163,7 @@ function Produtos() {
               <img src={p.imagens[0]} alt={p.nome} className="img-card" />
               <h3 className="text-lg">{p.nome}</h3>
               <p className="text-sm">{p.descricao}</p>
-              <span className="preco block mt-2">{p.preco}</span>
+              <span className="preco">{p.preco}</span>
             </div>
           ))}
         </div>
