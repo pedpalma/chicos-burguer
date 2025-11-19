@@ -1,0 +1,127 @@
+/* ====================================
+   Fonte personalizada da Google Fonts
+==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Centraliza conteúdo com flexbox */
+.centralizar {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.pop {
+    background-color: #a19286bb;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Imagem da POP */
+.pop img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-left: 55px !important;
+}
+
+.pop p {
+    white-space: pre-line;
+    font-weight: bold;
+    width: 90%;
+    margin: 0;
+}
+
+.pop h1{
+    margin: 0;
+}
+
+
+/* CSS DO SLIDER */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-direction: column !important;
+}
+
+.sliderDetalhes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8%;
+    padding: 0;
+}
+
+.slider button {
+    background-color: #b76a3c;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    height: 50px !important;
+    margin-top: 100px !important;
+    margin-left: 10px;
+    margin-right: -45px;
+}
+
+
+/* ====================================
+   Scrollbar personalizada (WebKit)
+==================================== */
+
+/* Largura e altura da barra */
+::-webkit-scrollbar {
+
+    width: 12px;
+  
+    height: 12px;
+  
+  }
+  
+  
+  /* Trilha (fundo da barra) */
+  ::-webkit-scrollbar-track {
+  
+    background: transparent;
+  
+  }
+  
+  
+  /* Polegar (a parte que se move) */
+  ::-webkit-scrollbar-thumb {
+  
+    background-color: #9a5833;
+  
+    border-radius: 100px;
+  
+    height: 20px;
+  
+    width: 20px;
+  
+    transition: all 0.3s ease;
+  
+  }
+  
+  /* Efeito hover na barra */
+  ::-webkit-scrollbar-thumb:hover {
+  
+    background-color: #b76a3c;
+  
+    transform: scale(1.4);
+  
+  }

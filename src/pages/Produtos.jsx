@@ -1,62 +1,75 @@
-// Imports
 import React, { useEffect } from "react";
 import "../assets/css/css_pages/Produtos.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
-// Aborgue 1
+// Imagens
 import aborgue1 from "../assets/img/aborgue1.png";
 import aborgue1_1 from "../assets/img/aborgue1.1.png";
 import aborgue1_2 from "../assets/img/aborgue1.2.png";
 
-// Aborgue 2
 import aborgue2 from "../assets/img/aborgue2.png";
 import aborgue2_1 from "../assets/img/aborgue2.1.png";
 import aborgue2_2 from "../assets/img/aborgue2.2.png";
 
-// Aborgue 3
 import aborgue3 from "../assets/img/aborgue3.png";
 import aborgue3_1 from "../assets/img/aborgue3.1.png";
 import aborgue3_2 from "../assets/img/aborgue3.2.png";
 
-// Aborgue 4
 import aborgue4 from "../assets/img/aborgue4.png";
 import aborgue4_1 from "../assets/img/aborgue4.1.png";
 import aborgue4_2 from "../assets/img/aborgue4.2.png";
 
-// Aborgue 5
 import aborgue5 from "../assets/img/aborgue5.png";
 import aborgue5_1 from "../assets/img/aborgue5.1.png";
 import aborgue5_2 from "../assets/img/aborgue5.2.png";
 
-// Aborgue 6
 import aborgue6 from "../assets/img/aborgue6.png";
 import aborgue6_1 from "../assets/img/aborgue6.1.png";
 import aborgue6_2 from "../assets/img/aborgue6.2.png";
 
-// Cebola
 import cebola from "../assets/img/cebola.png";
 import cebola2 from "../assets/img/cebola2.png";
 import cebola3 from "../assets/img/cebola3.png";
 
-// Batata
 import batata from "../assets/img/batata.png";
 import batata2 from "../assets/img/batata2.png";
 import batata3 from "../assets/img/batata3.png";
 
-// Tapioca
 import dadosdetapioca from "../assets/img/dadosdetapioca.png";
 import dadosdetapioca2 from "../assets/img/dadosdetapioca2.png";
 import dadosdetapioca3 from "../assets/img/dadosdetapioca3.png";
 
 function Produtos() {
-  useEffect(() => {}, []);
+
   const data = new Date();
-  const dia = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado",];
 
-  const mes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro",];
+  const dia = [
+    "Domingo",
+    "Segunda-Feira",
+    "Terça-Feira",
+    "Quarta-Feira",
+    "Quinta-Feira",
+    "Sexta-Feira",
+    "Sábado",
+  ];
 
-  // Dados dos produtos (cada produto com imagens importadas)
+  const mes = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
+
   const produtos = [
     {
       id: 1,
@@ -109,7 +122,8 @@ function Produtos() {
     {
       id: 7,
       nome: "Chico's Cebola Cabulosa",
-      descricao: "Porção de anéis de cebola empanada com maionese de alho",
+      descricao:
+        "Porção de anéis de cebola empanada com maionese de alho",
       preco: "R$ 19,90",
       imagens: [cebola, cebola2, cebola3],
     },
@@ -131,45 +145,52 @@ function Produtos() {
   ];
 
   function abrirDetalhes(nome, imagens, descricao) {
-    const url = `/pop_produto.html?nomeProd=${encodeURIComponent(
-      nome
-    )}&imagemProd=${encodeURIComponent(JSON.stringify(imagens))}&descricaoProd=${encodeURIComponent(
-      descricao
-    )}`;
+    const url = `/pop_produto.html?nomeProd=${encodeURIComponent(nome)}
+      &imagemProd=${encodeURIComponent(JSON.stringify(imagens))}
+      &descricaoProd=${encodeURIComponent(descricao)}`;
+
     window.open(url, "_blank", "width=600,height=500");
   }
 
-  const hojeTexto = `${dia[data.getDay()]}, ${data.getDate()} de ${mes[data.getMonth()]} de ${data.getFullYear()}`;
+  const hojeTexto = `${dia[data.getDay()]}, ${data.getDate()} de ${
+    mes[data.getMonth()]
+  } de ${data.getFullYear()}`;
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       <Header />
+
       <main>
         <section className="secao-produtos">
           <h1 className="produtos-titulo">Nossos Produtos</h1>
           <p className="relogio">{hojeTexto}</p>
+
           <div className="info-produtos">
             <h2>Atendemos via delivery e retirada no local 🚀</h2>
             <p>Explore nosso cardápio de lanches artesanais e porções especiais.</p>
             <p>Sabores exclusivos que vão conquistar seu paladar! 🍔🔥</p>
           </div>
         </section>
+
         <div className="container">
           {produtos.map((p) => (
             <div
               key={p.id}
               className="card"
-              onClick={() => abrirDetalhes(p.nome, p.imagens, p.descricao)}>
+              onClick={() => abrirDetalhes(p.nome, p.imagens, p.descricao)}
+            >
               <img src={p.imagens[0]} alt={p.nome} className="img-card" />
-              <h3 className="text-lg">{p.nome}</h3>
-              <p className="text-sm">{p.descricao}</p>
-              <span className="preco">{p.preco}</span>
+              <h3>{p.nome}</h3>
+              <p>{p.descricao}</p>
+              <span>{p.preco}</span>
             </div>
           ))}
         </div>
-      </main>  
+      </main>
+
       <Footer />
-    </div>
+    </>
   );
 }
+
 export default Produtos;
