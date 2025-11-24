@@ -10,19 +10,14 @@ function Index(){
     return(
     <>
     <head>
-        {/* <!-- Ícones do WhatsApp e Instagram --> */}
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"></link>
-        {/* <!-- BOOSTSTRAP --> */}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></link>
-        {/* <!-- Título da aba do navegador --> */}
         <title>Home</title>
-        {/* <!-- Ícone da aba do navegador --> */}
         <link rel="shortcut icon" src={logo} type="image/x-icon"></link>
     </head>
     <body>    
         <Header />
-        {/* SOBRE NOS/IMG BACKGROUND */}
-        <div className="about-section" style={{backgroundImage: `url(${banner})`}}>
+        <div className="about-section">
             <div className="about-content">
                 <h2 class="about-title">Sobre nós</h2> 
                 <p class="about-text">
@@ -43,12 +38,9 @@ function Index(){
                 </p>
             </div>
         </div>
-        {/* Seção: Mapa do Estabelecimento */}
         <section className="mapaGeral">
         <h2 className="titulo_sobrenos">Nosso Estabelecimento</h2>
         <p>Veja abaixo como nos encontrar!</p>
-
-            {/* Mapa do Google Maps */}
             <div className="centralizar">
             <iframe
                 className="mapaGeral"
@@ -62,10 +54,8 @@ function Index(){
                 </iframe>
             </div>
         </section>
-        {/* <!-- Seção: Produtos Oferecidos --> */}
         <section className="nossosprodutos">
             <h2>Nossos Produtos</h2>
-            {/* <!-- Lista com ícones --> */}
             <div className="div_nossosprodutos">
                 <ul className="lista">
                     <li>🍔 Lanches;</li>
@@ -73,7 +63,6 @@ function Index(){
                     <li>🥤 Bebidas;</li>
                     <li>🍬 Sobremesas;</li>
                 </ul>
-                {/* <!-- Imagem ilustrativa dos produtos --> */}
                 <img src={sobre_nos} className="img_nossosprodutos" />
             </div>
         </section>
