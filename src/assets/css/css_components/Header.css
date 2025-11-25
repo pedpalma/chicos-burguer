@@ -1,3 +1,5 @@
+
+
 /* ====================================
      Header (topo do site)
 ==================================== */
@@ -53,7 +55,7 @@
 }
 
 
-.nav-item {
+.nav-item, link {
  color: #000000;
 
  text-decoration: none;
